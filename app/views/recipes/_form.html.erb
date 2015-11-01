@@ -30,11 +30,8 @@
   </div>
   <div class="field">
     <%= f.label :ingredient_id %><br>
-    <%= f.collection_check_boxes :ingredient_id, Ingredient.all, :id,  :name %>
+    <%= f.collection_check_boxes(:recipe, :ingredient_ids, Ingredient.all, :id, :name) %>
   </div>
-
-  
-
 
   <div class="actions">
     <%= f.submit %>

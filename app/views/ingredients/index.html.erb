@@ -16,7 +16,6 @@
     <% @ingredients.each do |ingredient| %>
       <tr>
         <td><%= ingredient.name %></td>
-        <td><%= ingredient.recipe_id %></td>
         <td><%= ingredient.type %></td>
         <td><%= link_to 'Show', ingredient %></td>
         <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
