@@ -15,6 +15,13 @@
   <%= Category.find(@recipe.category_id).name %>
 </p>
 
+<p>
+  <strong>Ingredients:</strong>
+  <% ingredients = Ingredient.find(@recipe.ingredient_ids)%>
+  <%= names = ingredients.map { |ingredient| ingredient[:name]}.join(" - ") %>
+
+</p>
+
 
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> 

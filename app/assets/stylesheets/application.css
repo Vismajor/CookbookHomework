@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 {
+  text-align: center;
+ }
+
+ body {
+     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+     line-height:25px;
+     padding-top: 60px;
+ }
+
+ .button {
+  text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#fff)); 
+    zoom: 1;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+ }
+
+ li {
+     float: left;
+ }
+
+ .navbar {
+
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#fff));
+  zoom: 1;
+ }
+
+
