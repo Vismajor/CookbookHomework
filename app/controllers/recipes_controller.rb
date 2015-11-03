@@ -14,8 +14,7 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
-    count = @recipe.clickcount+1
-    @recipe.update_attributes(:clickcount => count)
+    @recipe.increment_clickcount
   end
 
   # GET /recipes/new
