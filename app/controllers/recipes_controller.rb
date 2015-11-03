@@ -4,12 +4,18 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.all
+    if params[:category_id]
+      @recipes = Recipe.where(category_id: params[:category_id])
+    else
+      @recipes = Recipe.all
+    end
   end
 
   # GET /recipes/1
   # GET /recipes/1.json
   def show
+    count = @recipe.clickcount+1
+    @recipe.update_attributes(:clickcount => count)
   end
 
   # GET /recipes/new

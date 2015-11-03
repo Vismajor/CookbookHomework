@@ -24,9 +24,9 @@
     <%= f.number_field :category_id %>
   </div> -->
   <div class="field">
-    <% @categories = Category.all %>
     <%= f.label :category_id %><br>
-    <%= f.select :category_id, options_from_collection_for_select(@categories, 'id', 'name') %>
+    <%#= f.select :category_id, options_from_collection_for_select(Category.all, 'id', 'name') %>
+    <%= f.select("category_id", Category.all.map {|c| [c.name, c.id]}) %>
   </div>
   <div class="field">
     <%= f.label :ingredient_id %><br>
