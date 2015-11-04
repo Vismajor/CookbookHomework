@@ -1,3 +1,5 @@
+<div class='title_bar'>
+
 <nav>
   <ul>
     <li > <%= link_to 'Categories', categories_path, class: "navbar" %></li>
@@ -6,6 +8,10 @@
     <li> <%= link_to 'New Recipe', new_recipe_path, class: "navbar" %></li>
     <li> <%= link_to 'Ingredients', ingredients_path, class: "navbar" %></li>
     <li> <%= link_to 'New Ingredient', new_ingredient_path, class: "navbar" %></li>
-    <li> <%= link_to 'Quantities', quantities_path, class: "navbar" %></li>
+    <li> <%= link_to 'New Quantity', new_quantity_path, class: "navbar" %></li>
+<% recipes = Recipe.all %>
+  <% most_popular = recipes.order("clickcount DESC").first %>
+  <li> <%= link_to 'Most popular', recipe_path(most_popular), class: "navbar" %></li>
   </ul>
 </nav>
+</div>

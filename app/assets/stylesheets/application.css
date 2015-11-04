@@ -12,7 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *
+  *Credits to the magician/sound engineer/cab driver/future coding *god - Graeme Kean
+
+
  */
+
+
 
  h1 {
   padding: 5px;
@@ -28,8 +34,8 @@
  .button {
   text-align: center;
     text-decoration: none;
-    color: white;
-    padding: 5px;
+    color: black;
+    padding: 10px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#fff)); 
     zoom: 1;
  }
@@ -52,7 +58,7 @@
  .navbar {
 
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px;
   margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#fff));
@@ -89,6 +95,43 @@
   top: 100px;
   position: absolute;
   
+ }
+
+ .title_bar {
+ width: 100%;
+ text-align: left;
+ color: black;
+ top: 0px;
+ left: 0%;
+ height: 50px;
+ position: fixed;
+ padding-left:20px;
+ padding-top: 20px;
+ z-index: 100;
+ }
+ .title_bar a{
+  color: black;
+  text-decoration: none;
+
+
+ }
+ #bg {
+   position: fixed; 
+   top: -50%; 
+   left: -50%; 
+   width: 200%; 
+   height: 200%;
+ }
+ #bg img {
+   position: absolute; 
+   top: 0; 
+   left: 0; 
+   right: 0; 
+   bottom: 0; 
+   margin: auto; 
+   min-width: 50%;
+   min-height: 50%;
+   z-index: 0;
  }
 
 
