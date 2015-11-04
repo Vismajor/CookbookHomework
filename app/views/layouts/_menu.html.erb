@@ -9,9 +9,7 @@
     <li> <%= link_to 'Ingredients', ingredients_path, class: "navbar" %></li>
     <li> <%= link_to 'New Ingredient', new_ingredient_path, class: "navbar" %></li>
     <li> <%= link_to 'New Quantity', new_quantity_path, class: "navbar" %></li>
-<% recipes = Recipe.all %>
-  <% most_popular = recipes.order("clickcount DESC").first %>
-  <li> <%= link_to 'Most popular', recipe_path(most_popular), class: "navbar" %></li>
+    <li>  <%= link_to 'Most popular', recipe_path(Recipe.most_popular), class: "navbar" if Recipe.most_popular%></li>
   </ul>
 </nav>
 </div>

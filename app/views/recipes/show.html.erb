@@ -14,7 +14,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= Category.find(@recipe.category_id).name %>
+  <%= @recipe.category.try(:name) %>
 </p>
 
 <p>

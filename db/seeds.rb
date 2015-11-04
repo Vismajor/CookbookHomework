@@ -6,5 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Category.create(name: "starters")
-Recipe.create(name: "Scrambled eggs", category_id: 1)
+# Category.create(name: "starters")
+# Recipe.create(name: "Scrambled eggs", category_id: 1)
